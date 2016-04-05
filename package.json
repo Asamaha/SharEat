@@ -1,0 +1,37 @@
+{
+  "name": "TwitterMap",
+  "version": "1.0.0",
+  "engines": {
+    "node":"v5.2.0"
+  },
+  "description": "Interactive Map",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node ./server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower cache clean && bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asamaha/TwitterMap.git"
+  },https://github.com/Asamaha/TwitterMap.git
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://Asamaha/TwitterMap.git"
+  },
+  "homepage": "https://Asamaha/TwitterMap.git",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "bower": "^1.7.2",
+    "express": "^4.13.3",
+    "express-session": "^1.12.1",
+    "favicon": "0.0.2",
+    "mongoose": "^4.3.4",
+    "passport": "^0.3.2",
+    "passport-twitter": "^1.0.3",
+    "socket.io": "^1.4.3",
+    "socket.io-client": "^1.4.3",
+    "twit": "^2.1.1"
+  }
+}
