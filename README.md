@@ -1,9 +1,8 @@
-__[TwitterMap](https://geo-tweet.herokuapp.com/)__
+# [TwitterMap](https://geo-tweet.herokuapp.com/)
 Interactive Map
 
 Discover new Tweets, along the journey.
 
-__[TwitterMap](https://geo-tweet.herokuapp.com/)__
 
 ## Summary
 
