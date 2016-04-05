@@ -1,1 +1,2 @@
-# TwitterMap
+# MapApp
+Interactive Map
