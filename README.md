@@ -1,12 +1,9 @@
 # [TwitterMap](https://geo-tweet.herokuapp.com/)
 Interactive Map
 
-Discover new Tweets, along the journey.
-
-
 ## Summary
 
-Road Trip Advisor recommends the best places to eat, drink, sleep and play, along your road trip. You choose the types of stops you're most interested in. Looking for a great local restaurant or nightlife? We've got something for everybody.
+Discover new Tweets, anywhere in the world.
 
 ## Features
 
@@ -39,7 +36,7 @@ Angular, Node/Express
     bower install
 
     # start server
-    node server.js
+    node srever/server.js
     ```
 
-1. Open http://localhost:3456 in your browser.
+1. Open http://localhost:3000 in your browser.
