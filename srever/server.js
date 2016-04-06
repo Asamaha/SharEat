@@ -16,3 +16,8 @@ var textSearch = require('./textSearch.js');
 if(!process.env.CONSUMER_KEY){
   var KEYS = require('../config.js');
 }
+
+// Setup server to listen on process.en.PORT delegating to port 3000
+var port = process.env.PORT || 3000;
+var key = process.env.DB_USER || KEYS.user;
+var db_pass = process.env.DB_PASSWORD || KEYS.password;
