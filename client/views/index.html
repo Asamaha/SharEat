@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <link rel="stylesheet" href="client/assets/stylesheets/styles.css"></link>
+    <link rel='stylesheet' href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <nav ng-controller='signupController'>
+      <ul class='navigation'>
+        <li><a href="#">home</a></li>
+        <li><a href="#">map</a></li>  
+        <li><a href="logout">sign out</a></li>  
+      </ul>
+    </nav>
+
+    <!--ui view will be inserted below-->
+    <div ng-controller="mapsPageController">
+      <div class="searchbar">
+        <form class='search' ng-submit="submitSearch()">
+          <input class='form-control' type="text" ng-model="searchField" placeholder="search"></input>
+          <button type="submit">search</button>
+        </form>
+
+        
