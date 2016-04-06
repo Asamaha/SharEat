@@ -11,3 +11,8 @@ var routes = require('./routes/routes.js');
 var socketio = require('socket.io');
 var TwitterAPI = require('./controllers/twitterApiController.js');
 var textSearch = require('./textSearch.js');
+
+// **Important password and keys **
+if(!process.env.CONSUMER_KEY){
+  var KEYS = require('../config.js');
+}
