@@ -1,5 +1,5 @@
 {
-  "name": "TwitterMap",
+  "name": "TweetGo",
   "version": "1.0.0",
   "engines": {
     "node":"v5.2.0"
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Asamaha/TwitterMap.git"
-  },https://github.com/Asamaha/TwitterMap.git
+    "url": "git+https://github.com/Asamaha/TweetGo.git"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://Asamaha/TwitterMap.git"
+    "url": "https://Asamaha/TweetGo.git"
   },
-  "homepage": "https://Asamaha/TwitterMap.git",
+  "homepage": "https://Asamaha/TweetGo.git",
   "dependencies": {
     "body-parser": "^1.14.2",
     "bower": "^1.7.2",
