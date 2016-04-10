@@ -1,4 +1,4 @@
-# [TwitterMap](https://geo-tweet.herokuapp.com/)
+# [TweetGo](https://geo-tweet.herokuapp.com/)
 Interactive Map
 
 ## Summary
@@ -36,7 +36,7 @@ Angular, Node/Express
     bower install
 
     # start server
-    node srever/server.js
+    node server/server.js
     ```
 
 1. Open http://localhost:3000 in your browser.
