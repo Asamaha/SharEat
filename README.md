@@ -1,4 +1,4 @@
-# [TweetGo](https://geo-tweet.herokuapp.com/)
+# TweetGo
 Interactive Map
 
 ## Summary
