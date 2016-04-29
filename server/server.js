@@ -21,3 +21,10 @@ if(!process.env.CONSUMER_KEY){
 var port = process.env.PORT || 3000;
 var key = process.env.DB_USER || KEYS.user;
 var db_pass = process.env.DB_PASSWORD || KEYS.password;
+
+//init socketStream to null
+var stream = null;
+var twitterTopic ;
+// ** NEED TO IMPLEMENT Setup server to listen to MongoLab URI delegating to local db 
+var mapDB = process.env.MONGOLAB_URI || 'mongodb://' + key + ':' + db_pass + '@ds039095.mongolab.com:39095/users-tweets';
+mongoose.connect(mapDB);
