@@ -28,3 +28,29 @@ var twitterTopic ;
 // ** NEED TO IMPLEMENT Setup server to listen to MongoLab URI delegating to local db 
 var mapDB = process.env.MONGOLAB_URI || 'mongodb://' + key + ':' + db_pass + '@ds039095.mongolab.com:39095/users-tweets';
 mongoose.connect(mapDB);
+
+// Set Up Authorization 
+var Auth = require('./auth/auth.js');
+Auth.initialize();
+
+
+// Setup app and routing
+var app = express();
+
+// Use Session Middleware
+app.use(session({
+  secret:'Keyboard Cat',
+  saveUninitialized: false,
+  resave: false
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+
+
+// Set up middleware stack
+app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, '../')));
+
+
+/* Routes */
+app.use('/', routes);
