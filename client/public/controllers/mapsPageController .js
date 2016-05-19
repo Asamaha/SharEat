@@ -19,7 +19,31 @@ app.controller('mapsPageController', ['$scope', '$http', 'httpService', '$sce', 
   $scope.addRelevantTweet = function(tweet){
     $scope.relevantTweets.unshift(tweet);
   }
+////////////////////////////////////////////CREATE AND OPEN SOCKET/////////////////////////////////////////////////////////
+  
+  var onInit = function() {
+    
+    ////////////////////////////////ASSUMPTIONS + DRIVERS FOR HANDLING DATA STREAM///////////////////////////////////////////
+    
+    //establish map drivers
+    var maxNumOfTweetsAllowedOnMap = 1000;
+    var heatmap = new google.maps.visualization.HeatmapLayer({
+      radius: 15
+    });
+    
+    var setMapOnAll = function(map) {
+      for (var i = 0; i < $scope.allTweets.data.length; i++) {
+        $scope.allTweets.data[i].setMap(map);
+      }
+    };
 
+    var clearMarkers = function(){
+      setMapOnAll(null);
+    };
+    var deleteMarkers = function() {
+      clearMarkers();
+      $scope.allTweets.data = [];
+    };
   
   }]);
 
