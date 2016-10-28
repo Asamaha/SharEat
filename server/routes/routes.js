@@ -15,3 +15,7 @@ var isLoggedIn = function(req, res, next) {
     // if they aren't redirect them to the home page
     res.redirect('/signup');
 };
+/* GET Request for index page. */
+router.get('/', isLoggedIn, function(req, res, next) {
+    res.sendFile(path.join(__dirname, '../../client/views/index.html'));
+});
