@@ -1,32 +1,21 @@
-# TweetGo
-Interactive Map
+# Tinnr
+Recipe organizer
 
 ## Summary
 
-Discover new Tweets, anywhere in the world.
+Discover new recipe, Bookmarks are numerous.
 
 ## Features
 
-- Interactive map from the Google Maps API
-- Content from Twitter
-- Works anywhere in the world
+- All in one recipe organizer
+- Printing for recipes, shopping lists and meal planner.
+- Shopping list and meal planner that's available across all of your devices.
 
 ## Tech Stack
 
 Angular, Node/Express
 
 ## Developer Environment
-
-1. Include Twitter API keys (get from Twitter directly):
-   ```sh
-   # Create a new file server/api/local_key.js, formatted as:
-   module.exports = {
-     consumer_key: 'YOUR-KEY',
-     consumer_secret: 'YOUR-KEY',
-     token: 'YOUR-KEY',
-     token_secret:  'YOUR-KEY',
-   };
-   ```
 
 1. Run the following in the project directory:
 
