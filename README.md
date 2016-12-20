@@ -1,5 +1,5 @@
-# Tinnr
-Recipe organizer
+# SharEat
+Meals organizer
 
 ## Summary
 
@@ -7,7 +7,7 @@ Discover new recipe, Bookmarks are numerous.
 
 ## Features
 
-- All in one recipe organizer
+- All in one restaurant booking organizer .
 - Printing for recipes, shopping lists and meal planner.
 - Shopping list and meal planner that's available across all of your devices.
 
